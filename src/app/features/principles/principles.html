@@ -1,0 +1,23 @@
+<section id="principles" class="section reveal" [appObserveSection]="'principles'">
+      <div class="container">
+     <h2 class="section-title">Engineering Principles</h2>
+  <p class="section-subtitle">
+    How I think and build: clean, secure, and production-ready software.
+  </p>
+
+  <div class="grid">
+    @for (p of items; track p.title) {
+      <mat-card class="card">
+        <mat-card-content class="row">
+          <mat-icon class="icon">{{ p.icon }}</mat-icon>
+          <div>
+            <h3 class="card-title">{{ p.title }}</h3>
+            <p class="card-desc">{{ p.desc }}</p>
+          </div>
+        </mat-card-content>
+      </mat-card>
+    }
+  </div>
+  </div>
+ 
+</section>

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
+import { ObserveSectionDirective } from '../../shared/directives/observe-section';
 
 type Certification = {
   title: string;
@@ -11,7 +12,7 @@ type Certification = {
 };
 @Component({
   selector: 'app-certifications',
-  imports: [MatCardModule, MatButtonModule],
+  imports: [MatCardModule, MatButtonModule,ObserveSectionDirective],
   templateUrl: './certifications.html',
   styleUrl: './certifications.scss',
 })

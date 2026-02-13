@@ -6,10 +6,11 @@ import { Experience } from '../experience/experience';
 import { Certifications } from '../certifications/certifications';
 import { Skills } from '../skills/skills';
 import { Contact } from '../contact/contact';
+import { Principles } from '../principles/principles';
 
 @Component({
   selector: 'app-home',
-  imports: [MatButtonModule, Projects,About,Experience,Certifications,Skills, Contact],
+  imports: [MatButtonModule, Projects,About,Experience,Certifications,Skills, Contact,Principles],
   templateUrl: './home.html',
   styleUrl: './home.scss',
 })

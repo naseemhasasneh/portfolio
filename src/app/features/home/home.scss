@@ -1,7 +1,7 @@
 .hero {
   display: grid;
   place-items: center;
-  min-height: 70vh;
+  min-height: 75vh;
 }
 
 .content {
@@ -13,6 +13,8 @@
   line-height: 1.1;
   margin: 0 0 12px;
   font-weight: 700;
+
+
 }
 
 .subtitle {
@@ -32,3 +34,4 @@
   gap: 12px;
   flex-wrap: wrap;
 }
+

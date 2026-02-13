@@ -1,13 +1,14 @@
-<mat-toolbar>
+<mat-toolbar  class="nav">
   <span class="brand">Naseem Hasasneh</span>
 
   <span class="spacer"></span>
 
-  <a mat-button routerLink="/">Home</a>
-<a mat-button href="#about">About</a>  
-<a mat-button href="#projects">Projects</a>
-<a mat-button href="#experience">Experience</a>  
-<a mat-button href="#certifications">Certifications</a>  
-<a mat-button href="#skills">Skills</a>
-<a mat-button href="#contact">Contact</a>
+  <!-- <a mat-button routerLink="/">Home</a> -->
+<a mat-button href="#about" [class.active]="spy.activeId() === 'about'">About</a>  
+<a mat-button href="#projects" [class.active]="spy.activeId() === 'projects'">Projects</a>
+<a mat-button href="#experience" [class.active]="spy.activeId() === 'experience'">Experience</a>  
+<a mat-button href="#certifications" [class.active]="spy.activeId() === 'certifications'">Certifications</a>  
+<a mat-button href="#skills" [class.active]="spy.activeId() === 'skills'">Skills</a>
+<a mat-button href="#principles" [class.active]="spy.activeId() === 'principles'">Engineering Principles</a>
+<a mat-button href="#contact" [class.active]="spy.activeId() === 'contact'">Contact</a>
 </mat-toolbar>

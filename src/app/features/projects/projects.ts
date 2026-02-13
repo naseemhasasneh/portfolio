@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatChipsModule } from '@angular/material/chips';
+import { ObserveSectionDirective } from '../../shared/directives/observe-section';
 
 type Project = {
   title: string;
@@ -12,7 +13,7 @@ type Project = {
 };
 @Component({
   selector: 'app-projects',
-  imports:[MatCardModule, MatChipsModule, MatButtonModule],
+  imports:[MatCardModule, MatChipsModule, MatButtonModule,ObserveSectionDirective],
   templateUrl: './projects.html',
   styleUrl: './projects.scss',
 })

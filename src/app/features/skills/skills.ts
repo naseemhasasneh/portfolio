@@ -1,13 +1,14 @@
 import { Component } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
 import { MatChipsModule } from '@angular/material/chips';
+import { ObserveSectionDirective } from '../../shared/directives/observe-section';
 type SkillGroup = {
   title: string;
   items: string[];
 };
 @Component({
   selector: 'app-skills',
-  imports: [MatCardModule, MatChipsModule],
+  imports: [MatCardModule, MatChipsModule,ObserveSectionDirective],
   templateUrl: './skills.html',
   styleUrl: './skills.scss',
 })
