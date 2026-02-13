@@ -1,0 +1,33 @@
+.section {
+  padding: 64px 0;
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.timeline {
+  display: grid;
+  gap: 18px;
+}
+
+.job {
+  padding: 18px;
+}
+
+.company {
+  font-size: 14px;
+  opacity: 0.8;
+  margin-bottom: 10px;
+}
+
+ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+li {
+  margin-bottom: 6px;
+}
